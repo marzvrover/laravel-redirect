@@ -15,11 +15,10 @@ class RedirectServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        RedirectResponse::macro('defaultTarget', function($url, $options = null) {
+        RedirectResponse::macro('defaultTarget', function($options, $default) {
             if (($target = $this->getTargetUrl() == null) || (! UrlValidator::match($target,
-                    $options)))
-            {
-                $this->setTargetUrl($url);
+                    $options))) {
+                $this->setTargetUrl($default);
             }
 
             return $this->getTargetUrl();
