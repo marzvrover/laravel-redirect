@@ -21,8 +21,11 @@ class RedirectServiceProvider extends ServiceProvider
             {
                 $this->setTargetUrl($url);
             }
+
+            return $this->getTargetUrl();
         });
     }
+
     /**
      * Register the service provider.
      *
