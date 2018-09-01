@@ -16,7 +16,7 @@ class RedirectServiceProvider extends ServiceProvider
     public function boot()
     {
         RedirectResponse::macro('defaultTarget', function($url, $options = null) {
-            if (($target = $this->getTargetUrl() == null) || (! UrlValidator::match($url,
+            if (($target = $this->getTargetUrl() == null) || (! UrlValidator::match($target,
                     $options)))
             {
                 $this->setTargetUrl($url);
