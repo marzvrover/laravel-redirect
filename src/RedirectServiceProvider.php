@@ -1,9 +1,9 @@
 <?php
+
 namespace MDooley47\Redirect;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\ServiceProvider;
-
 use MDooley47\UrlValidator\UrlValidator;
 
 class RedirectServiceProvider extends ServiceProvider
@@ -15,8 +15,8 @@ class RedirectServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        RedirectResponse::macro('defaultTarget', function($options, $default) {
-            if (($target = $this->getTargetUrl() == null) || (! UrlValidator::match($target,
+        RedirectResponse::macro('defaultTarget', function ($options, $default) {
+            if (($target = $this->getTargetUrl() == null) || (!UrlValidator::match($target,
                     $options))) {
                 $this->setTargetUrl($default);
             }
