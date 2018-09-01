@@ -1,6 +1,6 @@
 {
   "name": "mdooley47/laravel-redirect",
-  "description": "Extends laravel's redirect capabilities",
+  "description": "Extends Laravel's redirect capabilities",
   "keywords": ["laravel", "redirect"],
   "license": "MIT",
   "support": {
@@ -10,7 +10,7 @@
   "authors": [
     {
       "name": "Matthew Dooley",
-      "email": "matthew@dooley.com"
+      "email": "matthew@dooley.xyz"
     }
   ],
   "require": {
