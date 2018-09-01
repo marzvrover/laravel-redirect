@@ -1,0 +1,37 @@
+{
+  "name": "mdooley47/laravel-redirect",
+  "description": "Extends laravel's redirect capabilities",
+  "keywords": ["laravel", "redirect"],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/mdooley47/laravel-redirect/issues",
+    "source": "https://github.com/mdooley47/laravel-redirect"
+  },
+  "authors": [
+    {
+      "name": "Matthew Dooley",
+      "email": "matthew@dooley.com"
+    }
+  ],
+  "require": {
+    "illuminate/http": "~5.6",
+    "illuminate/support": "~5.6",
+    "illuminate/validation": "~5.6",
+    "mdooley47/laravel-urlvalidator": "^1.0"
+  },
+  "require-dev": {
+
+  },
+  "autoload": {
+    "psr-4": {
+      "MDooley47\\Redirect\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MDooley47\\Redirect\\RedirectServiceProvider"
+      ]
+    }
+  }
+}
