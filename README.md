@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> This project is old and not used anymore. Please use something like [ash-jc-allen/short-url](https://github.com/ash-jc-allen/short-url) instead.
+
+
 # laravel-redirect
 
 ## Install
